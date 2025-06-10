@@ -18,12 +18,6 @@ Our approach centers around developing a **human-like conversational experience*
 3. **Maintains conversation flow** through structured dialogue management
 4. **Provides real-time interaction** with minimal latency
 
-### Technical Strategy
-- **Modular Architecture**: Separation of concerns with distinct files for logic, data, and presentation
-- **Emotion-Driven Logic**: Custom algorithms to detect and respond to user emotions
-- **Scalable Design**: Cloud-hosted solution with responsive frontend
-- **Data-Driven Responses**: JSON-based dialogue system for easy maintenance and updates
-
 ---
 
 ## 🏗️ System Architecture
@@ -38,7 +32,7 @@ Our approach centers around developing a **human-like conversational experience*
          ▼                        ▼                        ▼
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
 │ User Interface  │    │ Emotion Logic    │    │ Dialogue System │
-│ - Chat Display  │    │ (logic.py)       │    │ (dialogflow.json)│
+│ - Chat Display  │    │ (logic.py)       │    │(dialogflow.json)│
 │ - Input Field   │    │ - Sentiment      │    │ - Triggers      │
 │ - Animations    │    │ - Context        │    │ - Responses     │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
@@ -46,25 +40,17 @@ Our approach centers around developing a **human-like conversational experience*
 
 ---
 
-## 📁 Project Structure & File Documentation
+## 📁 Project Structure
 
-### **app.py** -
-This is the main Flask application server handling HTTP requests and routing. It initializes Flask web server and integrates emotion logic with dialogue flow.
-
-### **logic.py** - 
-It is the main functional module for emotion detection and response logic. It maps detected emotions to appropriate response categories by choosing responses based on dialog flow.
-
-### **dialogflow.json** -
-It contains the structured dialogue system containing all bot responses and triggers. It is predefined but can be modified later for further enhancement.
-
-### **index.html** -
-It is responsible for providing the semantic structure of the chat interface with Flask integration and responsive layout.
-
-### **styles.css** -
-It styles the responsive, accessible and interactive UI with a clean and modern design.
-
-### **scripts.js** -
-It handles real-time chat logic including user input, rule-based communication and dynamic message updates.
+```plaintext
+📁 Real_Time_Chatbot
+├── app.py              → Main Flask backend
+├── logic.py            → Logic engine to match input with responses
+├── logic.json          → Rule-based triggers and responses
+├── index.html          → Frontend layout (chat UI)
+├── style.css           → Stylesheet for UI
+├── script.js           → Handles frontend logic and animations
+├── requirements.txt    → Python dependencies
 
 ---
 
@@ -74,7 +60,6 @@ It handles real-time chat logic including user input, rule-based communication a
 ```python
 Flask==2.3.3           # Web framework for Python
 gunicorn==23.0.0       # requires for hosting the app
-requests==2.31.0       # HTTP library for API calls
 ```
 ---
 ## 🛠️ Tech Stack
@@ -96,9 +81,9 @@ graph TD
     A[User Opens Webapp] --> B[Load Chat Interface]
     B --> C[User Types Message]
     C --> D[JavaScript Captures Input]
-    D --> E[AJAX Request to Flask]
-    E --> F[logic.py Processes Emotion]
-    F --> G[Query dialogflow.json]
+    D --> E[Sends Request to Flask]
+    E --> F[Processes Emotion]
+    F --> G[Query the dialogflow]
     G --> H[Select Appropriate Response]
     H --> I[Return JSON Response]
     I --> J[JavaScript Updates Chat]
@@ -118,27 +103,28 @@ graph TD
 
 ---
 
-## 📊 Performance Metrics
-
-- **Response Time**: < 200ms for typical interactions
-- **Availability**: 99.9% uptime with Render hosting
-- **Scalability**: Handles concurrent users efficiently
-
----
 
 ## 📝 Installation & Setup
 
+
+# Clone the repository:
 ```bash
-# Clone the repository
 git clone https://github.com/anwesha0123/Real-Time-Chatbot.git
+```
 
-# Install dependencies
+# Install dependencies:
+```
 pip install -r requirements.txt
+```
 
-# Run the application
+# Run the application locally:
+```
 python app.py
+```
 
-# Access the webapp using the live link
+# Access the webapp using the live link:
+```
 https://real-time-cahtbot-1.onrender.com
+```
 (please wait for 5 sec to load the website if you're running it for the first time)
 ```
