@@ -1,0 +1,60 @@
+{
+  "greetings": {
+    "triggers": ["hello", "hi", "hey", "hi there", "good morning", "good evening"],
+    "response": "Hello! Great to see you. Tell me how you're doing today."
+  },
+
+  "feeling_low": {
+    "triggers": ["i feel low", "i'm sad", "feeling down", "not doing great", "i feel depressed", "i'm not okay", "i feel bad", "i feel terrible", "i'm not happy"],
+    "response": "Sometimes it's okay not to be okay. Let's figure this out together."
+  },
+
+  "what_should_i_do": {
+    "triggers": ["what should i do", "give me advice", "help me", "i feel lost", "need suggestions", "suggest something"],
+    "response": "Sometimes a walk, a nap, or playing a video game might help. I think you should take a break and plan a small trip which can help lift your spirits."
+  },
+
+  "need_help": {
+    "triggers": ["i need help", "need some help?", "can you help me?", "please assist me"],
+    "response": "Of course. I'm here to support you. Tell me what's on your mind."
+  },
+
+  "i_am_okay": {
+    "triggers": ["i am okay", "i'm fine", "not bad", "just okay"],
+    "response":  "Great, thanks for sharing. I am glad that you are okay!"
+  },
+
+  "i_am_confused": {
+    "triggers": ["i am confused", "i don't understand", "everything is messy", "i feel overwhelmed"],
+    "response": "Confusion is the first step toward clarity. Let's talk it through."
+  },
+
+  "i_am_happy": {
+    "triggers": ["i am happy", "i feel good", "i'm feeling great", "today is a good day", "i feel cheerful", "i am excited", "i am joyful"],
+    "response": "That's wonderful to hear! Keep holding onto that positive feeling."
+  },
+
+  "give_me_advice": {
+    "triggers": ["give me an advice", "any advice?", "suggest something"],
+    "response": "It's okay to pause. Sometimes stepping back and doing something you enjoy can change your entire mood."
+  },
+
+  "about": {
+    "triggers": ["about you", "who are you", "what are you", "tell me about yourself", "what is this app", "what can you do?"],
+    "response": "I'm a real-time chatbot. You can share your thoughts & emotions with me anytime."
+  },
+
+  "thanks": {
+    "triggers": ["thank you", "thanks", "appreciate it", "grateful"],
+    "response": "You're welcome. I'm always here for you."
+  },
+
+  "goodbye": {
+    "triggers": ["goodbye", "bye", "see you later", "take care", "catch you later"],
+    "response": "Goodbye! Take care of yourself. I'm here whenever you need me."
+  },
+
+  "default": {
+    "response": "Feel free to share what's on your mind."
+  }
+}
