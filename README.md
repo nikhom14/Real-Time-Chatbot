@@ -124,7 +124,7 @@ python app.py
 
 # Access the webapp using the live link:
 ```
-https://real-time-cahtbot-1.onrender.com
+https://real-time-chatbot-1.onrender.com
 ```
 (please wait for 5 sec to load the website if you're running it for the first time)
 
