@@ -140,7 +140,7 @@ https://real-time-chatbot-1.onrender.com
 ## 🙋‍♀️ Author
 
 Anwesha Das <br>
-GitHub: github.com/anwesha0123 <br>
+GitHub: https://github.com/anwesha0123 <br>
 Email: anweshadas22@tnu.in
 
 
