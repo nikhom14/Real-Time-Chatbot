@@ -5,7 +5,7 @@
 This project implements a real-time chatbot that combines simple rule-based logic with emotion triggers to deliver appropriate responses. The system leverages Flask for backend processing, custom dialogue management and emotion-based triggers to create an engaging conversational experience.
 The users can enjoy their time by sharing their thoughts & feelings to a chatbot which responds in real-time based on the predefined logic. The WebApp has access to quick buttons for simplicity and ease or users can write their message as well in the chat area.
 
-**Live Demo:** [https://real-time-chatbot-1.onrender.com] (https://real-time-chatbot-1.onrender.com)
+**Live Demo:** [ https://real-time-chatbot-1.onrender.com](https://real-time-chatbot-1.onrender.com)
 
 ---
 
