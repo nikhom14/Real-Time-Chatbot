@@ -9,11 +9,10 @@ The users can enjoy their time by sharing their thoughts & feelings to a chatbot
 
 ### Video Walkthrough
 <div align="center">
-  <a href="https://github.com/user-attachments/assets/5cca6508-e437-4f23-b9a2-43c2c26de9a7">
-    <img src="./images/demo-thumbnail.png" alt="Chatbot Demo Video" width="600">
-    <br>
-    <em>Click to watch the demo video</em>
-  </a>
+  <video width="700" controls>
+    <source src="https://github.com/user-attachments/assets/5cca6508-e437-4f23-b9a2-43c2c26de9a71" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </div>
 
 ### Interactive Demo
