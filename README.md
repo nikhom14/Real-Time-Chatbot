@@ -38,7 +38,22 @@ Our approach centers around developing a human-like conversational experience by
 │ - Animations    │    │ - Context        │    │ - Responses     │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
 ```
-
+```
+sequenceDiagram
+    participant U as User
+    participant UI as Frontend
+    participant F as Flask App
+    participant L as Logic.py
+    participant D as Dialogflow.json
+    
+    U->>UI: Types message
+    UI->>F: POST /chat
+    F->>L: Process emotion
+    L->>D: Query responses
+    D->>L: Return matches
+    L->>F: Selected response
+    F->>UI: JSON response
+    UI->>U: Display bot message
 ---
 
 ## 📁 Project Structure
