@@ -8,7 +8,7 @@ The users can enjoy their time by sharing their thoughts & feelings to a chatbot
 ## 🎥 Live Demo
 
 ### Video Walkthrough
-[🎥 Watch Demo Video](https://github.com/user-attachments/assets/5cca6508-e437-4f23-b9a2-43c2c26de9a71)
+https://github.com/user-attachments/assets/36804d9a-3372-4bf1-8f87-f756dd611c5a
 
 ### Interactive Demo
 **Live Application:** [ https://real-time-chatbot-1.onrender.com](https://real-time-chatbot-1.onrender.com)
