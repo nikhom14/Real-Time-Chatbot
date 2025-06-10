@@ -90,9 +90,7 @@ graph TD
     J --> K[Display Bot Message]
     K --> C
 ```
-<div align="center">
-         <img src="![Real_Time_Chatbot_flowchart](https://github.com/user-attachments/assets/5a5c39fc-b1a6-45b1-949c-7e2985515fe2)" width="700">
-</div>
+
 ### **Detailed Process Flow**
 
 1. **User Interaction**: User visits the webapp and types a message
@@ -105,9 +103,7 @@ graph TD
 
 ---
 
-
 ## 📝 Installation & Setup
-
 
 # Clone the repository:
 ```bash
