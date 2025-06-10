@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/36804d9a-3372-4bf1-8f87-f756dd611c5a
 
 ## 🎯 Project Approach
 
-Our approach centers around developing a human-like conversational experience by integrating rule-based logic into chatbot responses. Now, Users can enjoy seamless conversation with the chatbot and can vent their frustation which makes their mood lighter. We've implemented a simple system that:
+Our approach centers around developing a human-like conversational experience by integrating rule-based logic into chatbot responses. Now, Users can enjoy seamless conversation with the chatbot and can vent their frustation which makes their mood lighter. We've implemented a simple system which is a:
 
 1. Simple assistant with rule-based logic dialogues
 2. Analyzes user input for emotional intent
@@ -57,6 +57,7 @@ Our approach centers around developing a human-like conversational experience by
 ├── styles.css               → Stylesheet for UI
 ├── scripts.js               → Handles frontend logic and animations
 ├── requirements.txt         → Python dependencies
+├── README.md                → This file 
 ```
 ---
 
@@ -72,11 +73,11 @@ gunicorn==23.0.0       # requires for hosting the app
 
 - **Python Version**: 3.12
 - **Framework**: Flask 3.1.1
-- **Frontend**: Vanilla HTML/CSS/JavaScript
+- **Frontend**: HTML/CSS/JavaScript
 - **Data Format**: JSON for dialogue management
 - **Version Control**: Git & GitHub
 - **Cloud platform for hosting**: Render
-- **Integrated development environment**: VS Code
+- **Integrated Development Environment**: VS Code
 ---
 
 ## 🔄 Application Flow
@@ -111,8 +112,12 @@ graph TD
 ## 📝 Installation & Setup
 
 # Clone the repository:
-```bash
+```
 git clone https://github.com/anwesha0123/Real-Time-Chatbot.git
+```
+# Enter the current directory:
+```
+cd Real-Time-Chatbot
 ```
 
 # Install dependencies:
@@ -130,4 +135,12 @@ python app.py
 https://real-time-chatbot-1.onrender.com
 ```
 (please wait for 1 min to load the website if you're running it for the first time)
+
+---
+## 🙋 Author
+
+Anwesha Das
+GitHub: github.com/anwesha0123
+Email: anweshadas22@tnu.in
+
 
