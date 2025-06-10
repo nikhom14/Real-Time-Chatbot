@@ -5,7 +5,19 @@
 This project implements a real-time chatbot that combines simple rule-based logic with emotion triggers to deliver appropriate responses. The system leverages Flask for backend processing, custom dialogue management and emotion-based triggers to create an engaging conversational experience.
 The users can enjoy their time by sharing their thoughts & feelings to a chatbot which responds in real-time based on the predefined logic. The WebApp has access to quick buttons for simplicity and ease or users can write their message as well in the chat area.
 
-**Live Demo:** [ https://real-time-chatbot-1.onrender.com](https://real-time-chatbot-1.onrender.com)
+## 🎥 Live Demo
+
+### Video Walkthrough
+<div align="center">
+  <a href="https://github.com/user-attachments/assets/5cca6508-e437-4f23-b9a2-43c2c26de9a7">
+    <img src="./images/demo-thumbnail.png" alt="Chatbot Demo Video" width="600">
+    <br>
+    <em>Click to watch the demo video</em>
+  </a>
+</div>
+
+### Interactive Demo
+**Live Application:** [ https://real-time-chatbot-1.onrender.com](https://real-time-chatbot-1.onrender.com)
 
 ---
 
@@ -37,23 +49,6 @@ Our approach centers around developing a human-like conversational experience by
 │ - Input Field   │    │ - Sentiment      │    │ - Triggers      │
 │ - Animations    │    │ - Context        │    │ - Responses     │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
-```
-```
-sequenceDiagram
-    participant U as User
-    participant UI as Frontend
-    participant F as Flask App
-    participant L as Logic.py
-    participant D as Dialogflow.json
-    
-    U->>UI: Types message
-    UI->>F: POST /chat
-    F->>L: Process emotion
-    L->>D: Query responses
-    D->>L: Return matches
-    L->>F: Selected response
-    F->>UI: JSON response
-    UI->>U: Display bot message
 ```
 ---
 
