@@ -54,6 +54,7 @@ sequenceDiagram
     L->>F: Selected response
     F->>UI: JSON response
     UI->>U: Display bot message
+```
 ---
 
 ## 📁 Project Structure
