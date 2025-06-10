@@ -1,4 +1,4 @@
-![Real_Time_Chatbot_flowchart](https://github.com/user-attachments/assets/5a5c39fc-b1a6-45b1-949c-7e2985515fe2)# Real-Time Chatbot with Emotion-Based Responses
+# Real-Time Chatbot with Emotion-Based Responses
 
 ## 🌟 Project Overview
 
@@ -90,6 +90,8 @@ graph TD
     J --> K[Display Bot Message]
     K --> C
 ```
+![Real_Time_Chatbot_flowchart](https://github.com/user-attachments/assets/5a5c39fc-b1a6-45b1-949c-7e2985515fe2)
+
 ### **Detailed Process Flow**
 
 1. **User Interaction**: User visits the webapp and types a message
