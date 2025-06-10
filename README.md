@@ -32,7 +32,7 @@ Our approach centers around developing a human-like conversational experience by
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
 │   Frontend      │    │   Flask Backend  │    │   Data Layer    │
-│   (HTML/CSS/JS) │◄──►│   (app.py)       │◄──►│   (JSON files)  │
+│  (HTML/CSS/JS)  │◄──►│   (app.py)       │◄──►│  (JSON files)   │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
          │                        │                        │
          │                        │                        │
@@ -50,13 +50,13 @@ Our approach centers around developing a human-like conversational experience by
 
 ```plaintext
 📁 Real_Time_Chatbot
-├── app.py              → Main Flask backend
-├── logic.py            → Logic engine to match input with responses
+├── app.py                   → Main Flask backend
+├── logic.py                 → Logic engine to match input with responses
 ├── dialogflow.json          → Rule-based triggers and responses
-├── index.html          → Frontend layout (chat UI)
-├── styles.css           → Stylesheet for UI
-├── scripts.js           → Handles frontend logic and animations
-├── requirements.txt    → Python dependencies
+├── index.html               → Frontend layout (chat UI)
+├── styles.css               → Stylesheet for UI
+├── scripts.js               → Handles frontend logic and animations
+├── requirements.txt         → Python dependencies
 ```
 ---
 
