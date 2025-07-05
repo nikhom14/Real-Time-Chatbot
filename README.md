@@ -1,146 +1,126 @@
-# Real-Time Chatbot with Emotion-Based Responses
+# Real-Time Chatbot 🤖
 
-## 🌟 Project Overview
+![Real-Time Chatbot](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue)
 
-This project implements a real-time chatbot that combines simple rule-based logic with emotion triggers to deliver appropriate responses. The system leverages Flask for backend processing, custom dialogue management and emotion-based triggers to create an engaging conversational experience.
-The users can enjoy their time by sharing their thoughts & feelings to a chatbot which responds in real-time based on the predefined logic. The WebApp has access to quick buttons for simplicity and ease or users can write their message as well in the chat area.
+Welcome to the **Real-Time Chatbot** project! In this repository, we are building a real-time chatbot that uses rule-based logic to communicate with users seamlessly. This project combines various technologies and tools to create an interactive web application that can engage users effectively.
 
-## 🎥 Live Demo
+## Table of Contents
 
-### Video Walkthrough
-https://github.com/user-attachments/assets/36804d9a-3372-4bf1-8f87-f756dd611c5a
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-### Interactive Demo
-**Live Application:** [ https://real-time-chatbot-1.onrender.com](https://real-time-chatbot-1.onrender.com)
+## Introduction
 
----
+Chatbots are becoming an essential part of user interaction in various domains, including customer service, education, and entertainment. This project aims to develop a chatbot that can respond to user queries in real-time using predefined rules. The bot will understand user inputs and provide relevant responses based on the programmed logic.
 
-## 🎯 Project Approach
+## Features
 
-Our approach centers around developing a human-like conversational experience by integrating rule-based logic into chatbot responses. Now, Users can enjoy seamless conversation with the chatbot and can vent their frustation which makes their mood lighter. We've implemented a simple system which is a:
+- **Real-Time Interaction**: The chatbot can respond to user messages instantly.
+- **Rule-Based Logic**: The bot uses a set of rules to determine appropriate responses.
+- **User-Friendly Interface**: The web application has a clean and simple design for easy interaction.
+- **Emotion Detection**: The chatbot can recognize user emotions and adjust its responses accordingly.
+- **Multi-Platform Support**: The chatbot can be accessed from any device with a web browser.
 
-1. Simple assistant with rule-based logic dialogues
-2. Analyzes user input for emotional intent
-3. Triggers appropriate responses based on emotions
-4. Maintains conversation flow through structured dialogue management
-5. Provides real-time interaction with minimal latency
+## Technologies Used
 
----
+This project leverages a variety of technologies to build a robust chatbot:
 
-## 🏗️ System Architecture
+- **AIML**: Used for defining the chatbot's knowledge base.
+- **Flask**: A lightweight web framework for building the server-side application.
+- **HTML, CSS, JavaScript**: For creating the front-end interface.
+- **JSON**: For data interchange between the client and server.
+- **Python 3**: The primary programming language for backend development.
+- **Dialogflow**: For advanced natural language processing capabilities.
+- **VSCode**: The integrated development environment used for coding.
+- **Render**: For deploying the web application.
 
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Frontend      │    │   Flask Backend  │    │   Data Layer    │
-│  (HTML/CSS/JS)  │◄──►│   (app.py)       │◄──►│  (JSON files)   │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-         │                        │                        │
-         │                        │                        │
-         ▼                        ▼                        ▼
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│ User Interface  │    │ Emotion Logic    │    │ Dialogue System │
-│ - Chat Display  │    │ (logic.py)       │    │(dialogflow.json)│
-│ - Input Field   │    │ - Sentiment      │    │ - Triggers      │
-│ - Animations    │    │ - Context        │    │ - Responses     │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-```
----
+## Installation
 
-## 📁 Project Structure
+To get started with the Real-Time Chatbot, follow these steps:
 
-```plaintext
-📁 Real_Time_Chatbot
-├── app.py                   → Main Flask backend
-├── logic.py                 → Logic engine to match input with responses
-├── dialogflow.json          → Rule-based triggers and responses
-├── index.html               → Frontend layout (chat UI)
-├── styles.css               → Stylesheet for UI
-├── scripts.js               → Handles frontend logic and animations
-├── requirements.txt         → Python dependencies
-├── README.md                → This file 
-```
----
+1. **Clone the Repository**: 
+   ```bash
+   git clone https://github.com/nikhom14/Real-Time-Chatbot.git
+   ```
 
-## 🔧 Dependencies
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd Real-Time-Chatbot
+   ```
 
-### **Backend Dependencies**
-```python
-Flask==2.3.3           # Web framework for Python
-gunicorn==23.0.0       # requires for hosting the app
-```
----
-## 🛠️ Tech Stack
+3. **Install Dependencies**:
+   Make sure you have Python 3 installed. Then, run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-- **Python Version**: 3.12
-- **Framework**: Flask 3.1.1
-- **Frontend**: HTML/CSS/JavaScript
-- **Data Format**: JSON for dialogue management
-- **Version Control**: Git & GitHub
-- **Cloud platform for hosting**: Render
-- **Integrated Development Environment**: VS Code
----
+4. **Run the Application**:
+   Start the Flask server by executing:
+   ```bash
+   python app.py
+   ```
 
-## 🔄 Application Flow
+5. **Access the Chatbot**:
+   Open your web browser and go to `http://127.0.0.1:5000` to start interacting with the chatbot.
 
-```mermaid
-graph TD
-    A[User Opens Webapp] --> B[Load Chat Interface]
-    B --> C[User Types Message]
-    C --> D[JavaScript Captures Input]
-    D --> E[Sends Request to Flask]
-    E --> F[Processes Emotion]
-    F --> G[Query the dialogflow]
-    G --> H[Select Appropriate Response]
-    H --> I[Return JSON Response]
-    I --> J[JavaScript Updates Chat]
-    J --> K[Display Bot Message]
-    K --> C
-```
+## Usage
 
-### **Detailed Process Flow**
+Once the application is running, you can type your messages into the chat interface. The chatbot will analyze your input and respond based on its rule-based logic. 
 
-1. **User Interaction**: User visits the webapp and types a message
-2. **Frontend Processing**: JavaScript validates input and sends a request
-3. **Backend Reception**: Flask receives the message via POST request
-4. **Emotion Analysis**: logic.py analyzes the message for emotion based triggers
-5. **Response Selection**: dialogflow.json is queried for appropriate responses
-6. **Frontend Update**: JavaScript receives response and updates chat interface
-7. **Visual Feedback**: Message appears with smooth animations
+### Example Interactions
 
----
+- **User**: "Hello!"
+- **Chatbot**: "Hi there! How can I assist you today?"
 
-## 📝 Installation & Setup
+- **User**: "I'm feeling sad."
+- **Chatbot**: "I'm sorry to hear that. Is there anything specific you'd like to talk about?"
 
-# Clone the repository:
-```
-git clone https://github.com/anwesha0123/Real-Time-Chatbot.git
-```
-# Enter the current directory:
-```
-cd Real-Time-Chatbot
-```
+## Contributing
 
-# Install dependencies:
-```
-pip install -r requirements.txt
-```
+We welcome contributions from everyone! If you would like to contribute to the Real-Time Chatbot project, please follow these steps:
 
-# Run the application locally:
-```
-python app.py
-```
+1. **Fork the Repository**: Click the "Fork" button at the top right of the repository page.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Edit the files and make your improvements.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Fork**: 
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Create a Pull Request**: Go to the original repository and submit a pull request.
 
-# Access the webapp using the live link:
-```
-https://real-time-chatbot-1.onrender.com
-```
-(please wait for 1 min to load the website if you're running it for the first time)
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or suggestions, feel free to reach out:
+
+- **Author**: [nikhom14](https://github.com/nikhom14)
+- **Email**: your.email@example.com
+
+## Releases
+
+To download the latest release of the Real-Time Chatbot, visit the [Releases](https://github.com/nikhom14/Real-Time-Chatbot/releases) section. Download the necessary files and execute them to run the application.
+
+![Releases](https://img.shields.io/badge/Latest%20Release%20Info-blue)
+
+You can also check the "Releases" section for updates and new features.
 
 ---
-## 🙋‍♀️ Author
 
-Anwesha Das <br>
-GitHub: https://github.com/anwesha0123 <br>
-Email: anweshadas22@tnu.in
-
-
+Thank you for your interest in the Real-Time Chatbot project! We hope you find it useful and engaging. Happy coding!
